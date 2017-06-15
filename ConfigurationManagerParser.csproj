@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Concrete\GenericParser.cs" />
     <Compile Include="Concrete\HasValueParser.cs" />
     <Compile Include="Concrete\DateTimeParser.cs" />
     <Compile Include="Concrete\CommaSeparatedParser.cs" />
@@ -50,10 +51,15 @@
     <Compile Include="Interfaces\IConfigurationManagerParser.cs" />
     <Compile Include="Concrete\StringParser.cs" />
     <Compile Include="Concrete\IntParser.cs" />
+    <None Include="ConfigurationManagerParser.nuspec" />
+    <None Include="LICENSE" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
