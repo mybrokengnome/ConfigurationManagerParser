@@ -42,6 +42,7 @@ CommaSeparatedParser returns an IEnumerable<string>, after splitting the value w
     Note: It is up to the user to parse the results of the CommaSeparatedParser, the parser just returns them as strings
      
 GenericParser<T> returns the type of T. Can typically just use this method, but if you want you can use the concrete classes above.
+    
     Setting: <add key="SMTP_Port" value="587" />
     Example: var p = GenericParser<int>.Get("SMTP_Port");_
     Returns: p = 587
